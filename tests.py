@@ -5,7 +5,7 @@ from conftest import detective_books, horror_books, comedy_books, anime_books, f
 
 class TestBooksCollector:
 
-    # 1. проверяем, что добавилось именно две
+    # 1. Проверяем, что добавилось именно две
     def test_add_new_book_add_two_diferent_books(self, collector):
         collector.add_new_book(horror_books)
         collector.add_new_book(fantasy_books)
