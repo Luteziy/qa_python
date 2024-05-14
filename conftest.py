@@ -15,6 +15,7 @@ anime_books = 'Синий трактор'
 fantasy_books = 'Космо Хилл'
 
 
+
 @pytest.fixture(scope='function')
 def ready_books(collector):
     books_genre = [ (detective_books, 'Детективы'),
@@ -22,6 +23,7 @@ def ready_books(collector):
                     (comedy_books, 'Комедии'),
                     (anime_books, 'Мультфильмы'),
                     (fantasy_books, 'Фантастика'),
+
                     ]
     for book, genre in books_genre:
         collector.add_new_book(book)
